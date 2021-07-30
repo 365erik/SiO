@@ -1,0 +1,16 @@
+.Post header {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.Post h1 {
+    font-weight: 100;
+    line-height: 1.05em;
+    margin: 0;
+}
+
+.postDate {
+    margin: .9rem 0;
+    font-size: .9rem;
+    color: #ff4500;
+}

@@ -1,0 +1,45 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: calc(12px + 1vmin);
+    font-weight: 200;
+    line-height: 1.35em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: var(--darkmode-black);
+}
+
+main {
+    margin: auto;
+    padding: 30px 7vw 0 7vw;
+    width: 100%;
+    max-width: 960px;
+    min-height: 100vh;
+    color: var(--darkmode-font-color);
+    background: var(--darkmode-bgcolor);
+}
+
+section {
+    padding: 1.5em;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 200;
+    text-align: center;
+}
+
+
+ul, ol {
+    padding-left: 20px;
+}
+
+strong, em {
+    color: var(--darkmode-font-color);
+}

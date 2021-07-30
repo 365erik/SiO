@@ -1,0 +1,10 @@
+:root {
+    --darkmode-font-color: aliceblue;
+    --darkmode-bgcolor: rgb(32, 32, 32);
+    --darkmode-black: rgb(8, 8, 8);
+    --darkmode-accent: red;
+}
+
+:root.light {
+    --darkmode-black: green;
+}
