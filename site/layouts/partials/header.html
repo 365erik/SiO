@@ -1,12 +1,4 @@
 <header class="Header">
-    <nav id="MainNavigation" class="MainNavigation">
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/">Contact</a></li>
-            <li><a href="/">Latest</a></li>
-            <li><a href="/">Archives</a></li>
-            <li><a href="/">Random</a></li>
-        </ul>
-        <div class="Screen" aria-hidden="true"></div>
-    </nav>
+<!--    <section class="SiteName">Sitting in Oblivion: <span class="Tagline" id="Tagline">A Blog!</span></section>-->
+    {{ block "mainNavigation" . }}{{ partial "mainNavigation" . }}{{end}}
 </header>

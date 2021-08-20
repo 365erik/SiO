@@ -1,58 +1,18 @@
 .Header {
     margin: 0 auto;
-    max-width: 960px;
-    font-weight: 400;
-    background: var(--darkmode-font-color);
-}
-
-.MainNavigation ul {
-    margin: 0 auto;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
     width: 100%;
-    max-width: 960px;
+    max-width: var(--base-width);
+    z-index: 0;
 }
 
-.MainNavigation li {
-    list-style: none;
-    flex-grow: 1;
-}
-
-.MainNavigation li.always-show, .MainNavigation li.Hamburger {
-    display: block;
-}
-
-
-.MainNavigation a {
-    color: var(--darkmode-bgcolor);
-    text-decoration: none;
-    display: block;
-    text-align: center;
-    line-height: 30px;
-}
-
-
-.MainNavigation.is-open .Screen {
+.SiteName {
+    margin: 0;
+    line-height: 40px;
+    padding: 1px 20px;
+    color: var(--font-color);
     position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0.95;
-    height: 110vh;
-    width: 100vw;
-    background: var(--darkmode-bgcolor);
-    overflow: hidden;
-    z-index: -1;
-}
-
-
-@media screen and (min-width: 600px) {
-    .MainNavigation li {
-        display: list-item;
-    }
-
-    .MainNavigation li.Hamburger {
-        display: none;
-    }
+    left: 50%;
+    transform: translateX(-50%);
+    width: var(--base-width);
+    background: var(--color-black);
 }

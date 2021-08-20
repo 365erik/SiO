@@ -13,17 +13,17 @@ body {
     'Droid Sans', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: var(--darkmode-black);
+    background: var(--color-black);
 }
 
 main {
     margin: auto;
     padding: 30px 7vw 0 7vw;
     width: 100%;
-    max-width: 960px;
+    max-width: var(--base-width);
     min-height: 100vh;
-    color: var(--darkmode-font-color);
-    background: var(--darkmode-bgcolor);
+    color: var(--font-color);
+    background: var(--bgcolor);
 }
 
 section {
@@ -41,5 +41,5 @@ ul, ol {
 }
 
 strong, em {
-    color: var(--darkmode-font-color);
+    color: var(--font-color);
 }
