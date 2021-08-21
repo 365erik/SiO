@@ -1,10 +1,13 @@
 :root {
-    --darkmode-font-color: aliceblue;
-    --darkmode-bgcolor: rgb(32, 32, 32);
-    --darkmode-black: rgb(8, 8, 8);
-    --darkmode-accent: red;
+    --base-width: 960px;
+    /* Default theme colors */
+    --color-black: rgb(8, 8, 8);
+    --color-accent: red;
+    --color-dark: rgb(32, 32, 32);
+    --color-light: aliceblue;
+    --color-white: white;
+    --font-color: var(--color-light);
+    --bgcolor: var(--color-dark);
 }
 
-:root.light {
-    --darkmode-black: green;
-}
+
