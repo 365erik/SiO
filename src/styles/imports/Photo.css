@@ -8,7 +8,7 @@
     max-width: 400px;
 }
 .Photo .frame {
-    background: var(--darkmode-font-color);
+    background: var(--font-color);
     padding: .25rem;
 }
 

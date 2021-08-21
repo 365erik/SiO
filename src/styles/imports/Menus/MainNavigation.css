@@ -1,0 +1,64 @@
+.MainNavigation {
+    width: 100%;
+    max-width: var(--base-width);
+    background: var(--font-color);
+    display: flex;
+    position: fixed;
+    z-index: 0;
+    font-weight: 300;
+}
+
+.MainNavigation .Menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.MainNavigation li {
+}
+
+.MainNavigation a {
+    line-height: 40px;
+}
+
+/*.MainNavigationMenu a {*/
+/*    line-height: 40px;*/
+/*    text-decoration: none;*/
+/*    border-bottom: 1px solid currentColor;*/
+/*}*/
+
+/*.MainNavigationMenu a:hover, .MainNavigationMenu a:focus {*/
+/*    font-weight: 800;*/
+/*}*/
+
+/*!* Padding is on the LI because if it were on A, the border underline would be continuous across navigation items. *!*/
+/*.MainNavigationMenu li {*/
+/*    padding: 0 20px;*/
+/*}*/
+
+/*.MainNavigationToggle {*/
+/*    background: var(--font-color);*/
+/*    padding: 0;*/
+/*    font-weight: 400;*/
+/*    z-index: 10;*/
+/*}*/
+
+/*.MainNavigationToggle a {*/
+/*    display: inline-block;*/
+/*    line-height: 40px;*/
+/*    padding: 0 20px;*/
+/*    text-decoration: none;*/
+/*    color: var(--bgcolor);*/
+/*}*/
+
+/*.Test {*/
+/*    display: flex;*/
+/*    z-index: 10;*/
+
+/*}*/
+
+/*.Test div {*/
+/*    color: white;*/
+/*    border: 1px solid white;*/
+/*}*/

@@ -355,15 +355,18 @@ template {
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/imports/Root.css ***!
   \*******************************************************************************/
 :root {
-    --darkmode-font-color: aliceblue;
-    --darkmode-bgcolor: rgb(32, 32, 32);
-    --darkmode-black: rgb(8, 8, 8);
-    --darkmode-accent: red;
+    --base-width: 960px;
+    /* Default theme colors */
+    --color-black: rgb(8, 8, 8);
+    --color-accent: red;
+    --color-dark: rgb(32, 32, 32);
+    --color-light: aliceblue;
+    --color-white: white;
+    --font-color: var(--color-light);
+    --bgcolor: var(--color-dark);
 }
 
-:root.light {
-    --darkmode-black: green;
-}
+
 
 /*!*******************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/imports/Base.css ***!
@@ -383,17 +386,17 @@ body {
     'Droid Sans', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: var(--darkmode-black);
+    background: var(--color-black);
 }
 
 main {
     margin: auto;
     padding: 30px 7vw 0 7vw;
     width: 100%;
-    max-width: 960px;
+    max-width: var(--base-width);
     min-height: 100vh;
-    color: var(--darkmode-font-color);
-    background: var(--darkmode-bgcolor);
+    color: var(--font-color);
+    background: var(--bgcolor);
 }
 
 section {
@@ -411,7 +414,7 @@ ul, ol {
 }
 
 strong, em {
-    color: var(--darkmode-font-color);
+    color: var(--font-color);
 }
 
 /*!********************************************************************************!*\
@@ -427,7 +430,7 @@ strong, em {
     max-width: 400px;
 }
 .Photo .frame {
-    background: var(--darkmode-font-color);
+    background: var(--font-color);
     padding: .25rem;
 }
 
@@ -469,70 +472,98 @@ strong, em {
   \*********************************************************************************/
 .Header {
     margin: 0 auto;
-    max-width: 960px;
-    font-weight: 400;
-    background: var(--darkmode-font-color);
+    width: 100%;
+    max-width: var(--base-width);
+    z-index: 0;
 }
 
-.MainNavigation ul {
-    margin: 0 auto;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
+.SiteName {
+    margin: 0;
+    line-height: 40px;
+    padding: 1px 20px;
+    color: var(--font-color);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: var(--base-width);
+    background: var(--color-black);
+}
+
+/*!***********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/imports/Menus/MainNavigation.css ***!
+  \***********************************************************************************************/
+.MainNavigation {
     width: 100%;
-    max-width: 960px;
+    max-width: var(--base-width);
+    background: var(--font-color);
+    display: flex;
+    position: fixed;
+    z-index: 0;
+    font-weight: 300;
+}
+
+.MainNavigation .Menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
 }
 
 .MainNavigation li {
-    list-style: none;
-    flex-grow: 1;
 }
-
-.MainNavigation li.always-show, .MainNavigation li.Hamburger {
-    display: block;
-}
-
 
 .MainNavigation a {
-    color: var(--darkmode-bgcolor);
-    text-decoration: none;
-    display: block;
-    text-align: center;
-    line-height: 30px;
+    line-height: 40px;
 }
 
+/*.MainNavigationMenu a {*/
+/*    line-height: 40px;*/
+/*    text-decoration: none;*/
+/*    border-bottom: 1px solid currentColor;*/
+/*}*/
 
-.MainNavigation.is-open .Screen {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0.95;
-    height: 110vh;
-    width: 100vw;
-    background: var(--darkmode-bgcolor);
-    overflow: hidden;
-    z-index: -1;
-}
+/*.MainNavigationMenu a:hover, .MainNavigationMenu a:focus {*/
+/*    font-weight: 800;*/
+/*}*/
 
+/*!* Padding is on the LI because if it were on A, the border underline would be continuous across navigation items. *!*/
+/*.MainNavigationMenu li {*/
+/*    padding: 0 20px;*/
+/*}*/
 
-@media screen and (min-width: 600px) {
-    .MainNavigation li {
-        display: list-item;
-    }
+/*.MainNavigationToggle {*/
+/*    background: var(--font-color);*/
+/*    padding: 0;*/
+/*    font-weight: 400;*/
+/*    z-index: 10;*/
+/*}*/
 
-    .MainNavigation li.Hamburger {
-        display: none;
-    }
-}
+/*.MainNavigationToggle a {*/
+/*    display: inline-block;*/
+/*    line-height: 40px;*/
+/*    padding: 0 20px;*/
+/*    text-decoration: none;*/
+/*    color: var(--bgcolor);*/
+/*}*/
+
+/*.Test {*/
+/*    display: flex;*/
+/*    z-index: 10;*/
+
+/*}*/
+
+/*.Test div {*/
+/*    color: white;*/
+/*    border: 1px solid white;*/
+/*}*/
 
 /*!*********************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/imports/Footer.css ***!
   \*********************************************************************************/
 footer {
     margin: 0 auto;
-    max-width: 960px;
-    background: var(--darkmode-font-color);
+    max-width: var(--base-width);
+    background: var(--font-color);
 }
 
 .Copyright {
