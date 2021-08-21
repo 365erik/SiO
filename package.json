@@ -11,6 +11,7 @@
     "start": "run-p start:*",
     "start:hugo": "hugo server -D --watch",
     "start:webpack": "webpack --mode=development --watch",
+    "start:browser": "sleep 1 && open http://localhost:1313/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Erik Smith",
