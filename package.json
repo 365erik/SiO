@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "SittingInOblivion.com",
   "main": "src/js/index.js",
+  "engines": {
+    "npm": "please-use-yarn",
+    "yarn": ">= 1.22.11"
+  },
   "scripts": {
     "start": "run-p start:*",
     "start:hugo": "hugo server -D --watch",
