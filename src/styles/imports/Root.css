@@ -1,5 +1,6 @@
 :root {
     --base-width: 960px;
+    --media-max-width: 500px;
     /* Default theme colors */
     --color-black: rgb(8, 8, 8);
     --color-accent: red;

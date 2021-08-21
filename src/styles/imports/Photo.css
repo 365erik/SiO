@@ -5,7 +5,7 @@
 
 .Photo {
     margin: auto;
-    max-width: 400px;
+    max-width: var(--media-max-width);
 }
 .Photo .frame {
     background: var(--font-color);
