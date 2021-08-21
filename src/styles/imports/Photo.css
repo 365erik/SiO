@@ -1,0 +1,26 @@
+.Photo .caption {
+    font-size: .85rem;
+    font-style: italic;
+}
+
+.Photo {
+    margin: auto;
+    max-width: var(--media-max-width);
+}
+.Photo .frame {
+    background: var(--font-color);
+    padding: .25rem;
+}
+
+.Photo img {
+    height: auto;
+    width: 100%;
+    display: block;
+}
+
+.Photo .caption {
+    margin: 0;
+    text-align: center;
+    font-weight: 100;
+    font-size: .7rem;
+}

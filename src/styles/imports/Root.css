@@ -1,0 +1,14 @@
+:root {
+    --base-width: 960px;
+    --media-max-width: 500px;
+    /* Default theme colors */
+    --color-black: rgb(8, 8, 8);
+    --color-accent: red;
+    --color-dark: rgb(32, 32, 32);
+    --color-light: aliceblue;
+    --color-white: white;
+    --font-color: var(--color-light);
+    --bgcolor: var(--color-dark);
+}
+
+
