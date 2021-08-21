@@ -1,5 +1,3 @@
-import "./css/main.css";
-
 import menu from "./Menu/menu";
 
 document.addEventListener("DOMContentLoaded", () => {
