@@ -1,5 +1,7 @@
-import menu from "./Menu/menu";
+import menu from "./menu";
+import tagline from "./tagline";
 
 document.addEventListener("DOMContentLoaded", () => {
-  menu({toggleID: "MainMenuToggle", menuID: "MainNavigation", openClass: "is-open"});
+  menu({toggleID: "MainNavigationToggle", menuID: "MainNavigationMenu", openClass: "is-open"});
+  tagline({taglineID: "Tagline"});
 });
