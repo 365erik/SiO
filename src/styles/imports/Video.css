@@ -1,5 +1,5 @@
 .Video {
-    margin: auto;
+    margin: 3em auto;
     width: 100%;
     max-width: var(--media-max-width);
 }

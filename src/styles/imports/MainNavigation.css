@@ -1,0 +1,54 @@
+.MainNavigation {
+    width: 100%;
+    max-width: var(--base-width);
+    position: fixed;
+    top: 0;
+    font-weight: 300;
+    height: 50px;
+    z-index: 1;
+}
+
+.MainNavigationToggle {
+    background: var(--color-black);
+    float: right;
+    display: block;
+    text-decoration: none;
+    padding: 0 2vw;
+    max-height: 50px;
+    line-height: 49px;
+    font-weight: 800;
+    overflow: hidden;
+}
+
+.MainNavigationToggle:hover, .MainNavigationToggle:focus {
+}
+
+.MainNavigationMenu {
+    list-style: none;
+    padding: 1em 0 1.5rem 0;
+    margin: 0;
+    display: none;
+    width: 100%;
+    background: var(--color-light);
+}
+
+.MainNavigationMenu.is-open {
+    display: flex;
+    flex-direction: column;
+}
+
+.MainNavigationMenu li {
+    background: var(--color-light);
+    /* Padding is on the LI because if it were on A, the border underline would be continuous across navigation items. */
+    padding: 0 2vw;
+}
+
+.MainNavigationMenu a {
+    line-height: 50px;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+}
+
+.MainNavigationMenu a:hover, .MainNavigationMenu a:focus {
+    font-weight: 800;
+}
