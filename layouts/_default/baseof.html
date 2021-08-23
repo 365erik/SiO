@@ -9,10 +9,11 @@
     <link href="/assets/main.css" rel="stylesheet">
 </head>
 
-<body>
+<body id="Body">
   {{ block "header" . }}{{ partial "header" . }}{{end}}
   {{ block "main" . }}{{end}}
   {{ block "footer" . }}{{ partial "footer" . }}{{end}}
+  <a id="ToTop" class="ToTop" href="#Body">TOP</a>
   <script src="/assets/main.js"></script>
 </body>
 
