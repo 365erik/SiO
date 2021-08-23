@@ -4,7 +4,7 @@
     height: 50px;
     max-width: var(--base-width);
     border-bottom: 1px solid black;
-    background: var(--bgcolor);;
+    background: var(--bgcolor);
 }
 
 .SiteName {

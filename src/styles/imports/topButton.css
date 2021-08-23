@@ -1,0 +1,17 @@
+.ToTop {
+    position: fixed;
+    bottom: 10%;
+    left: 5%;
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    line-height: 80px;
+    background: orangered;
+    color: white;
+    border-radius: 40px;
+    display: none;
+}
+
+.ToTop.show {
+    display: block;
+}
