@@ -3,7 +3,7 @@ const tobButton = () => {
   let lastKnownScrollPosition = 0;
   let isShowing = false;
   let ticking = false;
-
+  let showButtonWhenScrolledThisMuch = window.innerHeight * 0.7;
   if (button) {
     button.addEventListener("click", (e) => {
       e.preventDefault();
@@ -14,7 +14,7 @@ const tobButton = () => {
   }
 
   const toggleButton = () => {
-    if (lastKnownScrollPosition > window.innerHeight) {
+    if (lastKnownScrollPosition > showButtonWhenScrolledThisMuch) {
       if (!isShowing) {
         button.classList.remove("hide");
         button.classList.add("show");
