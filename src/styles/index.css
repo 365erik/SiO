@@ -1,10 +1,12 @@
 @import '~normalize.css';
 @import './imports/Root.css';
+@import './imports/Animations.css';
 @import './imports/Base.css';
 @import './imports/Photo.css';
 @import './imports/Post.css';
 @import './imports/Header.css';
 @import './imports/MainNavigation.css';
 @import './imports/Video.css';
-@import './imports/topButton.css';
+@import './imports/TopButton.css';
+@import './imports/Scrollbars.css';
 @import './imports/Footer.css';
