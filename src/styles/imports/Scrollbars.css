@@ -1,0 +1,18 @@
+/* Firefox */
+:root {
+    scrollbar-color: var(--color-accent) var(--color-dark);
+}
+
+/* Chrome-based */
+body::-webkit-scrollbar {
+    width: .5vw;
+    min-width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--color-accent);
+}
+
+body::-webkit-scrollbar-track {
+    background:  var(--color-dark);
+}

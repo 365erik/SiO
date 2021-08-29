@@ -5,27 +5,33 @@
     top: 0;
     font-weight: 300;
     height: 50px;
-    z-index: 1;
+    z-index: 10;
 }
 
 .MainNavigationToggle {
+    color: var(--color-accent);
     background: var(--color-black);
     float: right;
-    display: block;
     text-decoration: none;
     padding: 0 2vw;
     max-height: 50px;
     line-height: 49px;
     font-weight: 800;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.MainNavigationToggle:hover, .MainNavigationToggle:focus {
+.MainNavigationToggle svg {
+    margin-bottom: -2px;
+    margin-left: .75rem;
+    margin-right: 0;
 }
 
 .MainNavigationMenu {
     list-style: none;
-    padding: 1em 0 1.5rem 0;
+    padding: .5rem 0;
     margin: 0;
     display: none;
     width: 100%;
@@ -35,6 +41,7 @@
 .MainNavigationMenu.is-open {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
 }
 
 .MainNavigationMenu li {
@@ -46,9 +53,18 @@
 .MainNavigationMenu a {
     line-height: 50px;
     text-decoration: none;
-    border-bottom: 1px solid currentColor;
+}
+
+.MainNavigationMenu svg {
+    margin-bottom: -3px;
+    margin-left: .75rem;
 }
 
 .MainNavigationMenu a:hover, .MainNavigationMenu a:focus {
     font-weight: 800;
+}
+
+.feather-xl {
+    width: 1.75rem;
+    height: 1.75rem;
 }
