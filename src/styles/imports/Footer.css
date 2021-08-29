@@ -1,12 +1,11 @@
 footer {
-    margin: 0 auto 40px auto;
+    margin: 0 auto;
     max-width: var(--base-width);
+    background: var(--color-accent);
 }
 
 .Copyright {
     text-align: center;
-    padding: .7rem;
-    background: var(--color-accent);
     font-size: .8rem;
 }
 
