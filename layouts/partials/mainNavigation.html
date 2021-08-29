@@ -1,27 +1,38 @@
 <nav id="MainNavigation" class="MainNavigation">
     <a class="MainNavigationToggle" id="MainNavigationToggle" href="/#">Menu
         <i data-feather="menu" class="feather-xl"></i></a>
-    <div class="MenuWrapper">
-        <form>
-            <div>
-                <label for="autoplay">Autoplay embedded videos.</label>
-                <input type="checkbox" id="autoplay" name="autoplay">
-            </div>
-            <div>
-                <label for="hideBug">Hide "to top" bug.</label>
-                <input type="checkbox" id="hideBug" name="hideBug">
-            </div>
-            <div>
-                <label for="newWindows">Open external links in a new window.</label>
-                <input type="checkbox" id="newWindows" name="newWindows">
-            </div>
-            <div>
-                <label for="noSurprises">Disable surprises and fun things.</label>
-                <input type="checkbox" id="noSurprises" name="noSurprises">
-            </div>
-        </form>
-        </ul>
-        <ul id="MainNavigationMenu" class="MainNavigationMenu menu">
+    <div class="MainMenuAndSettings" id="MainMenuAndSettings">
+        <div class="leftPanel">
+            <form class="Settings">
+                <div class="preference">
+                    <input type="checkbox" id="noEmbeds" name="autoplay">
+                    <label for="noEmbeds">No third-party resources</label>
+                    <span class="toggle"></span>
+                    <div class="tooltip">This will disable any icons, fonts, and embedded videos not hosted directly on SittingInOblivion.com. You might want to enable this if you're very paranoid or dogmatic about not be tracked around the web.</div>
+                </div>
+                <div class="preference">
+                    <input type="checkbox" id="autoplay" name="autoplay">
+                    <label for="autoplay">Autoplay embedded media</label>
+                    <span class="toggle"></span>
+                </div>
+                <div class="preference">
+                    <input type="checkbox" id="hideBug" name="hideBug">
+                    <label for="hideBug">Hide "back to top" bug</label>
+                    <span class="toggle"></span>
+                </div>
+                <div class="preference">
+                    <input type="checkbox" id="newWindows" name="newWindows">
+                    <label for="newWindows">Open links in a new window</label>
+                    <span class="toggle"></span>
+                </div>
+                <div class="preference">
+                    <input type="checkbox" id="noSurprises" name="noSurprises">
+                    <label for="noSurprises">No surprises or fun stuff</label>
+                    <span class="toggle"></span>
+                </div>
+            </form>
+        </div>
+        <ul id="MainMenu" class="MainMenu menu">
             <li><a href="/">Home <i data-feather="home"></i></a></li>
             <li><a href="/">Contact <i data-feather="send"></i></a></li>
             <li><a href="/">Latest <i data-feather="file-text"></i></a></li>

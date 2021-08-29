@@ -1,4 +1,4 @@
-const menu = ({toggleID, menuID, openClass}) => {
+const menu = ({ toggleID, menuID, openClass, closeClass }) => {
   const toggle = document.getElementById(toggleID);
   const menu = document.getElementById(menuID);
 
@@ -10,10 +10,10 @@ const menu = ({toggleID, menuID, openClass}) => {
       isOpen = !isOpen;
       if (isOpen) {
         menu.classList.add(openClass);
-        toggle.classList.add(openClass);
+        menu.classList.remove(closeClass);
       } else {
+        menu.classList.add(closeClass);
         menu.classList.remove(openClass);
-        toggle.classList.remove(openClass);
       }
       event.preventDefault();
     });

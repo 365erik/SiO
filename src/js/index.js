@@ -5,8 +5,9 @@ import topButton from "./topButton";
 document.addEventListener("DOMContentLoaded", () => {
   menu({
     toggleID: "MainNavigationToggle",
-    menuID: "MainNavigationMenu",
-    openClass: "is-open",
+    menuID: "MainMenuAndSettings",
+    openClass: "open",
+    closeClass: "closed",
   });
   tagline({ taglineID: "Tagline" });
   topButton();

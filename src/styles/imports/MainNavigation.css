@@ -29,46 +29,65 @@
     margin-right: 0;
 }
 
-.MenuWrapper {
-    display: flex;
+.MainMenuAndSettings {
+    display: none;
     background: var(--color-light);
     width: 100%;
 }
 
-.MainNavigationMenu {
+.MainMenuAndSettings.open {
+    display: flex;
+}
+
+.MainMenu {
     list-style: none;
     padding: .5rem 0;
     margin: 0;
     display: none;
 }
 
-.MainNavigationMenu {
+.MainMenu {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-left: auto
+    margin-left: auto;
+    min-width: 15rem;
 }
 
-.MainNavigationMenu li {
+.MainMenu li {
     /* Padding is on the LI because if it were on A, the border underline would be continuous across navigation items. */
     padding: 0 2vw;
 }
 
-.MainNavigationMenu a {
+.MainMenu a {
     line-height: 50px;
     text-decoration: none;
 }
 
-.MainNavigationMenu svg {
+.MainMenu svg {
     margin-bottom: -3px;
     margin-left: .75rem;
 }
 
-.MainNavigationMenu a:hover, .MainNavigationMenu a:focus {
+.MainMenu a:hover, .MainMenu a:focus {
     font-weight: 800;
 }
 
 .feather-xl {
     width: 1.75rem;
     height: 1.75rem;
+}
+
+.leftPanel {
+    margin: 1rem;
+    font-size: 1.25rem;
+    width: 100%;
+    padding-left: 2rem;
+}
+
+.tooltip {
+    font-size: 1rem;
+    line-height: 1.4rem;
+    margin-left: 1.4rem;
+    z-index: 1;
 }
