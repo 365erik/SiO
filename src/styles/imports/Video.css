@@ -4,6 +4,11 @@
     max-width: var(--media-max-width);
 }
 
+/*
+This responsive video embed technique makes a the z-index contexts act strangely.
+To compensate, z-index is set -1 on <main> and +1 on <heading> to prevent the
+video player from floating atop the open menu. Neat.
+ */
 .VideoInner {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */

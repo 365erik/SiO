@@ -1,6 +1,7 @@
 import menu from "./menu";
 import tagline from "./tagline";
 import topButton from "./topButton";
+import photoModal from "./photoModal";
 
 document.addEventListener("DOMContentLoaded", () => {
   menu({
@@ -11,4 +12,5 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   tagline({ taglineID: "Tagline" });
   topButton();
+  photoModal();
 });

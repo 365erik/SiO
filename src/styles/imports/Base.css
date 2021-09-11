@@ -25,6 +25,11 @@ main {
     min-height: 100vh;
     color: var(--font-color);
     background: var(--bgcolor);
+    z-index: -1;
+}
+
+header {
+    z-index: 1;
 }
 
 section {
