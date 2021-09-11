@@ -11,7 +11,7 @@
     text-decoration: none;
     border: 3px solid var(--color-dark);
     display: none;
-    z-index: 10;
+    z-index: 1;
 }
 
 .ToTop.show {

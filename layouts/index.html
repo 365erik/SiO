@@ -2,15 +2,15 @@
 <main>
     <section>
         <aside class="Photo">
-            <div class="frame"><img id="Photo_Img" alt="MISSING IMAGE" src="/img/erik1709.jpg"></div>
-            <p class="caption">Sed nisi dui, luctus non elementum placerat, tincidunt in
+            <div class="frame"><img id="PhotoImage" class="PhotoImage" alt="MISSING IMAGE" src="/img/erik1709.jpg"></div>
+            <p id="PhotoCaption" class="PhotoCaption">Sed nisi dui, luctus non elementum placerat, tincidunt in
                 quam.</p>
             <div class="PhotoModal" id="PhotoModal">
-                <div class="PhotoModal__wrapper">
-                    <span class="PhotoModal__close" id="PhotoModal__close">&times;</span>
-                    <img id="PhotoModal__image" class="PhotoModal__image" src="" alt="">
+                <div class="PhotoModalWrapper">
+                    <span id="PhotoModalCloseButton" class="PhotoModalCloseButton">(esc) <i data-feather="x-circle"></i></span>
+                    <img id="PhotoModalImage" class="PhotoModalImage" src="" alt="">
                 </div>
-                <div class="PhotoModal__caption"></div>
+                <div id="PhotoModalCaption" class="PhotoModalCaption"></div>
             </div>
         </aside>
         <article class="Post">

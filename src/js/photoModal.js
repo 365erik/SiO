@@ -1,24 +1,27 @@
 const photoModal = () => {
-  const photoModal = document.getElementById("PhotoModal");
-  const photoImg = document.getElementById("Photo_Img");
-  const photoModal__close = document.getElementById("PhotoModal__close");
-  const photoModal__image = document.getElementById("PhotoModal__image");
+  const image = document.getElementById("PhotoImage");
+  const caption = document.getElementById("PhotoCaption").innerText || "";
+  const modal = document.getElementById("PhotoModal");
+  const close = document.getElementById("PhotoModalCloseButton");
+  const modalImage = document.getElementById("PhotoModalImage");
+  const modalCaption = document.getElementById("PhotoModalCaption");
 
   const closeModal = () => {
-    photoModal.classList.remove("open");
+    modal.classList.remove("open");
     document.removeEventListener("keydown", handleEsc);
   };
 
   const handleEsc = (e) => e.key === "Escape" && closeModal();
 
-  if (photoModal && photoImg && photoModal__close && photoModal__image) {
-    photoImg.onclick = () => {
+  if (modal && image && close && modalImage) {
+    image.onclick = () => {
       document.addEventListener("keydown", handleEsc);
-      photoModal__image.src = photoImg.src;
-      photoModal.classList.add("open");
+      modalImage.src = image.src;
+      modalCaption.innerText = caption;
+      modal.classList.add("open");
     };
 
-    photoModal__close.onclick = () => closeModal();
+    close.onclick = () => closeModal();
   }
 };
 
