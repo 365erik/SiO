@@ -1,7 +1,6 @@
 .PrevNext {
     background: var(--color-dark);
     width: 100%;
-    max-width: var(--base-width);
     margin: 0 auto;
 }
 
@@ -10,6 +9,7 @@
     font-weight: 400;
     color: var(--color-light);
     display: block;
+    min-height: 50px;
 }
 
 .PrevNextNext a:hover, .PrevNextNext a:focus,
@@ -41,8 +41,8 @@
 }
 
 .Illuminati {
-    height: 3.5rem;
-    width: 3.5rem;
+    height: 2rem;
+    width: 2rem;
 }
 
 .PrevNextRandom span {

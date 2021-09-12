@@ -2,7 +2,7 @@
     z-index: 0;
 }
 .Post header {
-    margin: 2rem 0;
+    margin: 0;
     text-align: center;
 }
 
@@ -13,7 +13,7 @@
 }
 
 .postDate {
-    margin: .9rem 0;
+    margin: .25rem 0 .75rem 0;
     font-size: .9rem;
     color: #ff4500;
 }

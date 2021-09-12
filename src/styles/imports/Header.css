@@ -1,23 +1,23 @@
 .Header {
-    position: fixed;
-    left: 0;
-    right: 0;
     margin: 0 auto;
-    width: 100%;
     height: 50px;
-    max-width: var(--base-width);
     border-bottom: 1px solid black;
     background: var(--bgcolor);
+    width: 100%;
+    display: flex;
+}
+
+/* @TODO  show this in tablet or higher */
+.Tagline {
+    /*display: none;*/
 }
 
 .SiteName {
-    position: fixed;
     margin: 0;
     display: block;
     text-align: center;
     line-height: 50px;
-    padding-left: 3vw;
     text-decoration: none;
     font-weight: 300;
-    color: var(--font-color);
+    color: var(--color-light);
 }

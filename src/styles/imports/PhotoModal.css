@@ -55,8 +55,8 @@
 }
 
 .PhotoModalCaption {
-    font-size: .75rem;
-    margin-top: .75rem;
+    font-size: 1rem;
+    margin-top: .25rem;
     text-align: center;
     color: var(--color-white);
     font-style: italic;

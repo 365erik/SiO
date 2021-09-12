@@ -4,7 +4,7 @@
 }
 
 .Photo {
-    margin: auto;
+    margin: 1rem auto;
     max-width: var(--media-max-width);
 }
 .PhotoFrame {
@@ -21,9 +21,10 @@
 }
 
 .PhotoCaption {
-    margin: .75rem 0 0;
+    margin: .25rem 0;
     text-align: center;
     font-weight: 100;
-    font-size: 1rem;
+    font-size: .75rem;
+    line-height: 1rem;
     font-style: italic;
 }

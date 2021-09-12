@@ -1,7 +1,7 @@
 footer {
     margin: 0 auto;
-    max-width: var(--base-width);
     background: var(--color-accent);
+    min-height: 150px;
 }
 
 .Copyright {

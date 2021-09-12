@@ -1,8 +1,7 @@
 .MainNavigation {
-    width: 100%;
-    max-width: var(--base-width);
     position: fixed;
     top: 0;
+    left: 0;
     font-weight: 300;
     height: 50px;
 }
@@ -48,7 +47,6 @@
 .MainMenu {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
     margin-left: auto;
     min-width: 15rem;
 }
