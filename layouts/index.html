@@ -1,19 +1,6 @@
 {{ define "main" }}
 <main>
     <section>
-        <aside class="Photo">
-            <div class="frame"><img id="PhotoImage" class="PhotoImage" alt="MISSING IMAGE" src="/img/erik1709.jpg">
-            </div>
-            <p id="PhotoCaption" class="PhotoCaption">Sed nisi dui, luctus non elementum placerat, tincidunt in
-                quam.</p>
-            <div class="PhotoModal" id="PhotoModal">
-                <div class="PhotoModalWrapper">
-                    <span id="PhotoModalCloseButton" class="PhotoModalCloseButton">(esc) <i data-feather="x-circle"></i></span>
-                    <img id="PhotoModalImage" class="PhotoModalImage" src="" alt="">
-                </div>
-                <div id="PhotoModalCaption" class="PhotoModalCaption"></div>
-            </div>
-        </aside>
         <article class="Post">
             <header>
                 <h1>h1. Nunc Viverra Eros a Imperdiet Suscipit</h1>
@@ -22,12 +9,27 @@
                 </p>
             </header>
 
-            <aside class="Quote">
-                <p>Quote. Sed erat ipsum, ornare eget quam sed, laoreet posuere augue. Nullam lectus orci, commodo et
-                    ligula
-                    nec,
-                    rutrum gravida risus. Nulla pulvinar ante ac tempor varius. (Marcus Aurelius)</p>
+            <aside class="Photo">
+                <div class="frame"><img id="PhotoImage" class="PhotoImage" alt="MISSING IMAGE" src="/img/erik1709.jpg">
+                </div>
+                <p id="PhotoCaption" class="PhotoCaption">Sed nisi dui, luctus non elementum placerat, tincidunt in
+                    quam.</p>
+                <div class="PhotoModal" id="PhotoModal">
+                    <div class="PhotoModalWrapper">
+                        <span id="PhotoModalCloseButton" class="PhotoModalCloseButton">(esc) <i data-feather="x-circle"></i></span>
+                        <img id="PhotoModalImage" class="PhotoModalImage" src="" alt="">
+                    </div>
+                    <div id="PhotoModalCaption" class="PhotoModalCaption"></div>
+                </div>
             </aside>
+
+            <figure class="Quote">
+                <blockquote>
+                    Quote. Sed erat ipsum, ornare eget quam sed, laoreet posuere augue. Nullam lectus orci, commodo et ligula nec, rutrum gravida risus. Nulla pulvinar ante ac tempor varius.
+                </blockquote>
+                <figcaption>&#8212;Marcus Aurelius, <cite>Meditations</cite>
+                </figcaption>
+            </figure>
 
             <h2>h2. Morbi et Sollicitudin Nisi</h2>
 
@@ -81,13 +83,13 @@
                         allow="autoplay; encrypted-media" title="YouTube Video"></iframe>
             </div>
         </aside>
-        <nav class="PrevNext">
-            <ul>
-                <li class="PrevNextPrev"><a href="/"><i data-feather="arrow-left"></i> The Previous Post</a></li>
-                <li class="PrevNextRandom"><a href="/"><span>Random</span> <i data-feather="eye" class="Illuminati"></i></a></li>
-                <li class="PrevNextNext"><a href="/">The Next Post <i data-feather="arrow-right"></i></a></li>
-            </ul>
-        </nav>
     </section>
 </main>
+<nav class="PrevNext">
+    <ul>
+        <li class="PrevNextPrev"><a href="/"><i data-feather="arrow-left"></i> The Previous Post has a Pretty Long Title</a></li>
+        <li class="PrevNextRandom"><a href="/"><span>Random</span> <i data-feather="eye" class="Illuminati"></i></a></li>
+        <li class="PrevNextNext"><a href="/">The Next Post <i data-feather="arrow-right"></i></a></li>
+    </ul>
+</nav>
 {{ end }}

@@ -1,15 +1,20 @@
+.PrevNext {
+    background: var(--color-dark);
+    width: 100%;
+    max-width: var(--base-width);
+    margin: 0 auto;
+}
+
 .PrevNext a {
     text-decoration: none;
     font-weight: 400;
     color: var(--color-light);
     display: block;
-    line-height: 50px;
-    border: 1px solid var(--color-black);
 }
 
 .PrevNextNext a:hover, .PrevNextNext a:focus,
 .PrevNextPrev a:hover, .PrevNextPrev a:focus {
-    background: yellowgreen;
+    color: var(--color-accent);
 }
 
 .PrevNext ul {
@@ -22,23 +27,22 @@
     margin: 0;
     list-style: none;
     text-align: center;
-    flex: 1 1 0;
+    flex: 1 0 0;
 }
 
 .PrevNextRandom a {
     border: 0;
-    color: var(--color-accent);
     line-height: 3rem;
 }
 
 .PrevNextRandom a:hover, .PrevNextRandom a:focus {
-    color: var(--color-light);
-    filter: drop-shadow(0 0 .5rem yellowgreen);
+    color: var(--color-accent);
+    filter: drop-shadow(0 0 .5rem var(--color-black));
 }
 
 .Illuminati {
-    height: 3rem;
-    width: 3rem;
+    height: 3.5rem;
+    width: 3.5rem;
 }
 
 .PrevNextRandom span {
@@ -53,12 +57,23 @@
     margin-bottom: -10px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 760px) {
+    .PrevNext {
+        padding: 1rem;
+    }
     .PrevNext a {
         border: none;
     }
     .PrevNext ul {
         flex-direction: row;
+    }
+
+    .PrevNextPrev a {
+        text-align: right;
+    }
+
+    .PrevNextNext a {
+        text-align: left;
     }
 
     .PrevNext .PrevNextRandom svg {

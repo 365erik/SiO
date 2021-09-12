@@ -1,0 +1,25 @@
+.Quote {
+    margin: 2rem auto;
+    padding: 1rem 1rem .75rem 1rem;
+    width: 80%;
+    background: var(--color-dark);
+    filter: drop-shadow(3px 2px 4px rgba(0, 0, 0, .25));
+}
+
+.Quote blockquote {
+    margin: 0;
+    padding: 0;
+    color: var(--color-light);
+    font-weight: 100;
+    font-style: italic;
+}
+
+.Quote figcaption {
+    text-align: right;
+    margin-top: .5rem;
+    font-size: .8rem;
+}
+
+/*.Quote cite {*/
+
+/*}*/

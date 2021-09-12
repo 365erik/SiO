@@ -44,7 +44,7 @@
     right: 0;
     color: var(--color-accent);
     transition: 0.3s;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .PhotoModalCloseButton:hover,
@@ -55,7 +55,7 @@
 }
 
 .PhotoModalCaption {
-    font-size: 1.25rem;
+    font-size: .75rem;
     margin-top: .75rem;
     text-align: center;
     color: var(--color-white);
