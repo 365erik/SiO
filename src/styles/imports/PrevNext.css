@@ -1,0 +1,63 @@
+.PrevNext a {
+    text-decoration: none;
+    font-weight: 400;
+    color: var(--color-light);
+    display: block;
+    line-height: 50px;
+    border: 1px solid var(--color-black);
+}
+
+.PrevNextNext a:hover, .PrevNextNext a:focus,
+.PrevNextPrev a:hover, .PrevNextPrev a:focus {
+    background: yellowgreen;
+}
+
+.PrevNext ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.PrevNext ul, .PrevNext li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    flex: 1 1 0;
+}
+
+.PrevNextRandom a {
+    border: 0;
+    color: var(--color-accent);
+    line-height: 3rem;
+}
+
+.PrevNextRandom a:hover, .PrevNextRandom a:focus {
+    color: var(--color-light);
+    filter: drop-shadow(0 0 .5rem yellowgreen);
+}
+
+.Illuminati {
+    height: 3rem;
+    width: 3rem;
+}
+
+.PrevNextRandom span {
+    display: none;
+}
+
+.PrevNext svg {
+    margin-bottom: -4px;
+}
+
+.PrevNext .PrevNextRandom svg {
+    margin-bottom: -10px;
+}
+
+@media screen and (min-width: 600px) {
+    .PrevNext a {
+        border: none;
+    }
+    .PrevNext ul {
+        flex-direction: row;
+    }
+}
