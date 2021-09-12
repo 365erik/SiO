@@ -8,15 +8,15 @@ const photoModal = () => {
   const modalImage = document.getElementById("PhotoModalImage");
   const modalCaption = document.getElementById("PhotoModalCaption");
 
-  const closeModal = () => {
-    modal.classList.remove("open");
-    document.removeEventListener("keydown", handleEsc);
-    dispatchSiOGlobal({ modal: "closed" });
-  };
-
-  const handleEsc = (e) => e.key === "Escape" && closeModal();
-
   if (modal && image && close && modalImage) {
+    const closeModal = () => {
+      modal.classList.remove("open");
+      document.removeEventListener("keydown", handleEsc);
+      dispatchSiOGlobal({ modal: "closed" });
+    };
+
+    const handleEsc = (e) => e.key === "Escape" && closeModal();
+
     image.onclick = () => {
       document.addEventListener("keydown", handleEsc);
       modalImage.src = image.src;
