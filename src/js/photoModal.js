@@ -1,3 +1,5 @@
+import { dispatchSiOGlobal } from "./SiOGlobals";
+
 const photoModal = () => {
   const image = document.getElementById("PhotoImage");
   const caption = document.getElementById("PhotoCaption").innerText || "";
@@ -9,6 +11,7 @@ const photoModal = () => {
   const closeModal = () => {
     modal.classList.remove("open");
     document.removeEventListener("keydown", handleEsc);
+    dispatchSiOGlobal({ modal: "closed" });
   };
 
   const handleEsc = (e) => e.key === "Escape" && closeModal();
@@ -19,6 +22,7 @@ const photoModal = () => {
       modalImage.src = image.src;
       modalCaption.innerText = caption;
       modal.classList.add("open");
+      dispatchSiOGlobal({ modal: "open" });
     };
 
     close.onclick = () => closeModal();

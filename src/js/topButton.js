@@ -1,3 +1,5 @@
+import { matchSiOGlobal } from "./SiOGlobals";
+
 const tobButton = () => {
   const button = document.getElementById("ToTop");
   let lastKnownScrollPosition = 0;
@@ -15,7 +17,7 @@ const tobButton = () => {
 
   const toggleButton = () => {
     if (lastKnownScrollPosition > showButtonWhenScrolledThisMuch) {
-      if (!isShowing) {
+      if (!isShowing && !matchSiOGlobal("modal", "open")) {
         button.classList.remove("hide");
         button.classList.add("show");
         isShowing = true;
