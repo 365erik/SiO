@@ -1,21 +1,32 @@
+import { SHORTCUTS } from "./shortcuts";
+
 const menu = ({ toggleID, menuID, openClass, closeClass }) => {
   const toggle = document.getElementById(toggleID);
   const menu = document.getElementById(menuID);
+  let isOpen = false;
 
-  if (toggle && menu) {
-    let isOpen = false;
+  const handleToggleMenu = (menu, isOpen) => {
+    if (isOpen) {
+      menu.classList.add(openClass);
+      menu.classList.remove(closeClass);
+    } else {
+      menu.classList.add(closeClass);
+      menu.classList.remove(openClass);
+    }
+  };
 
-    toggle.addEventListener("click", (event) => {
-      event.preventDefault();
+  if (menu) {
+    if (toggle) {
+      toggle.addEventListener("click", (event) => {
+        event.preventDefault();
+        isOpen = !isOpen;
+        handleToggleMenu(menu, isOpen);
+      });
+    }
+
+    document.addEventListener(SHORTCUTS.MENU, () => {
       isOpen = !isOpen;
-      if (isOpen) {
-        menu.classList.add(openClass);
-        menu.classList.remove(closeClass);
-      } else {
-        menu.classList.add(closeClass);
-        menu.classList.remove(openClass);
-      }
-      event.preventDefault();
+      handleToggleMenu(menu, isOpen);
     });
   }
 };

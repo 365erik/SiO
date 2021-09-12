@@ -60,4 +60,8 @@
     .PrevNext ul {
         flex-direction: row;
     }
+
+    .PrevNext .PrevNextRandom svg {
+        margin-bottom: -20px;
+    }
 }

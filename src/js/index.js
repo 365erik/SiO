@@ -3,8 +3,10 @@ import menu from "./menu";
 import tagline from "./tagline";
 import topButton from "./topButton";
 import photoModal from "./photoModal";
+import shortcuts from "./shortcuts";
 
 SiOGlobals();
+shortcuts();
 
 document.addEventListener("DOMContentLoaded", () => {
   menu({

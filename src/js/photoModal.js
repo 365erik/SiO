@@ -1,4 +1,5 @@
-import { dispatchSiOGlobal } from "./SiOGlobals";
+import { dispatchSiOGlobal, matchSiOGlobal } from "./SiOGlobals";
+import { SHORTCUTS } from "./shortcuts";
 
 const photoModal = () => {
   const image = document.getElementById("PhotoImage");
@@ -9,15 +10,9 @@ const photoModal = () => {
   const modalCaption = document.getElementById("PhotoModalCaption");
 
   if (modal && image && close && modalImage) {
-    const closeModal = () => {
-      modal.classList.remove("open");
-      document.removeEventListener("keydown", handleEsc);
-      dispatchSiOGlobal({ modal: "closed" });
-    };
+    const handleEsc = (e) => e.key === "Escape" && handleClose();
 
-    const handleEsc = (e) => e.key === "Escape" && closeModal();
-
-    image.onclick = () => {
+    const handleOpen = () => {
       document.addEventListener("keydown", handleEsc);
       modalImage.src = image.src;
       modalCaption.innerText = caption;
@@ -25,7 +20,21 @@ const photoModal = () => {
       dispatchSiOGlobal({ modal: "open" });
     };
 
-    close.onclick = () => closeModal();
+    const handleClose = () => {
+      modal.classList.remove("open");
+      document.removeEventListener("keydown", handleEsc);
+      dispatchSiOGlobal({ modal: "closed" });
+    };
+
+    image.onclick = () => {
+      handleOpen();
+    };
+
+    close.onclick = () => handleClose();
+
+    document.addEventListener(SHORTCUTS.PHOTO_MODAL, () =>
+      matchSiOGlobal("modal", "open") ? handleClose() : handleOpen()
+    );
   }
 };
 
