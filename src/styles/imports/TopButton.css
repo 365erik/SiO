@@ -1,9 +1,9 @@
 .ToTop {
     position: fixed;
-    bottom: 80px;
-    margin-left: -10px;
+    bottom: 10px;
     height: 50px;
     width: 50px;
+    margin-left: -5px;
     text-align: center;
     background: var(--color-accent);
     color: white;
