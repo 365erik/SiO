@@ -1,59 +1,67 @@
 .MainNavigation {
-    position: fixed;
-    top: 0;
-    left: 0;
     font-weight: 300;
     height: 50px;
 }
 
 .MainNavigationToggle {
-    color: var(--color-accent);
-    background: var(--color-black);
-    float: right;
-    text-decoration: none;
-    padding: 0 2vw;
-    max-height: 50px;
+    padding: 0 1vw;
     line-height: 49px;
     font-weight: 800;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    width: 11.5rem;
+    color: var(--color-accent);
+    background: var(--color-black);
+    text-decoration: none;
 }
 
 .MainNavigationToggle svg {
-    margin-bottom: -2px;
-    margin-left: .75rem;
-    margin-right: 0;
+    margin-bottom: -4px;
+    margin-right: .25rem;
 }
 
-.MainMenuAndSettings {
+.MainNavigationToggle.scrolled {
+    width: 4.5rem;
+}
+
+.MainNavigationToggle.scrolled .FullTitle {
+    display: none;
+}
+
+.MainNavigationToggle.scrolled .ShortTitle {
+    display: inline;
+}
+
+.MainNavigationToggle .ShortTitle {
+    display: none;
+}
+
+.MainMenuAndHelp {
     display: none;
     background: var(--color-light);
     width: 100%;
 }
 
-.MainMenuAndSettings.open {
+.MainMenuAndHelp.open {
     display: flex;
 }
 
-.MainMenu {
+.MainMenu, .MenuHelp {
     list-style: none;
-    padding: .5rem 0;
+    padding: .25rem 0;
     margin: 0;
-    display: none;
-}
-
-.MainMenu {
     display: flex;
     flex-direction: column;
-    margin-left: auto;
-    min-width: 15rem;
+    min-width: 10rem;
 }
 
-.MainMenu li {
+.MenuHelp {
+    padding: .5rem 1rem;
+}
+
+.MainMenu li, .MenuHelp li {
     /* Padding is on the LI because if it were on A, the border underline would be continuous across navigation items. */
-    padding: 0 2vw;
+    padding: 0 .5rem;
 }
 
 .MainMenu a {
@@ -63,18 +71,11 @@
 
 .MainMenu svg {
     margin-bottom: -3px;
-    margin-left: .75rem;
+    margin-right: .25rem;
 }
 
 .MainMenu a:hover, .MainMenu a:focus {
     font-weight: 800;
-}
-
-.leftPanel {
-    margin: 1rem;
-    font-size: 1.25rem;
-    width: 100%;
-    padding-left: 2rem;
 }
 
 .tooltip {

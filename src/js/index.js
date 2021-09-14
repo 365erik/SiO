@@ -1,5 +1,5 @@
 import SiOGlobals from "./SiOGlobals";
-import menu from "./menu";
+import menu, { toggleTitle } from "./menu";
 import tagline from "./tagline";
 import topButton from "./topButton";
 import photoModal from "./photoModal";
@@ -11,10 +11,10 @@ shortcuts();
 document.addEventListener("DOMContentLoaded", () => {
   menu({
     toggleID: "MainNavigationToggle",
-    menuID: "MainMenuAndSettings",
+    menuID: "MainMenuAndHelp",
     openClass: "open",
-    closeClass: "closed",
   });
+  toggleTitle("MainNavigationToggle");
   tagline({ taglineID: "Tagline" });
   topButton();
   photoModal();

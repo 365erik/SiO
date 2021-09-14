@@ -1,3 +1,4 @@
+import { SHORTCUTS } from "./shortcuts";
 import { matchSiOGlobal } from "./SiOGlobals";
 
 const tobButton = () => {
@@ -6,6 +7,9 @@ const tobButton = () => {
   let isShowing = false;
   let ticking = false;
   let showButtonWhenScrolledThisMuch = window.innerHeight * 0.7;
+
+  document.addEventListener(SHORTCUTS.PAGE_TOP, () => window.scrollTo(0, 0));
+
   if (button) {
     button.addEventListener("click", (e) => {
       e.preventDefault();

@@ -20,7 +20,7 @@ body {
 
 main {
     margin: auto;
-    padding: 40px 0 0 0;
+    padding: 1rem 0 0 0;
     width: 100%;
     min-height: 100vh;
     color: var(--font-color);
@@ -36,7 +36,6 @@ header {
 }
 
 section {
-    padding: 1.5em .5rem;
 }
 
 h1, h2, h3, h4 {
@@ -68,8 +67,12 @@ strong, em {
     color: var(--font-color);
 }
 
+b {
+    font-weight: 800;
+}
+
 .PageWrapper {
     margin: 0 auto;
     width: 80%;
-    position: static;
+    position: relative;
 }

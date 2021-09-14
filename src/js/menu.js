@@ -1,32 +1,48 @@
 import { SHORTCUTS } from "./shortcuts";
 
-const menu = ({ toggleID, menuID, openClass, closeClass }) => {
+export const toggleTitle = (toggleID = "") => {
+  const toggle = document.getElementById(toggleID);
+  const className = "scrolled";
+
+  if (!toggle) {
+    return;
+  }
+
+  let ticking = false;
+
+  document.addEventListener("scroll", (e) => {
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        if (!toggle.classList.contains(className) && window.scrollY > 50) {
+          toggle.classList.add(className);
+        } else if (window.scrollY === 0) {
+          toggle.classList.remove(className);
+        }
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
+};
+
+const menu = ({ toggleID, menuID, openClass }) => {
   const toggle = document.getElementById(toggleID);
   const menu = document.getElementById(menuID);
-  let isOpen = false;
 
-  const handleToggleMenu = (menu, isOpen) => {
-    if (isOpen) {
-      menu.classList.add(openClass);
-      menu.classList.remove(closeClass);
-    } else {
-      menu.classList.add(closeClass);
-      menu.classList.remove(openClass);
-    }
+  const handleToggleMenu = (menu) => {
+    menu.classList.toggle(openClass);
   };
 
   if (menu) {
     if (toggle) {
       toggle.addEventListener("click", (event) => {
         event.preventDefault();
-        isOpen = !isOpen;
-        handleToggleMenu(menu, isOpen);
+        handleToggleMenu(menu);
       });
     }
 
     document.addEventListener(SHORTCUTS.MENU, () => {
-      isOpen = !isOpen;
-      handleToggleMenu(menu, isOpen);
+      handleToggleMenu(menu);
     });
   }
 };
