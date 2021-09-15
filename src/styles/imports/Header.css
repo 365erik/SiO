@@ -23,7 +23,7 @@
 
 @media screen and (min-width: 960px){
     .HeaderInner {
-        left: calc(1vw * var(--white-space-base) / 2);
-        right: calc(1vw * var(--white-space-base) / 2);
+        left: calc(1vw * var(--white-space-base));
+        right: calc(1vw * var(--white-space-base));
     }
 }

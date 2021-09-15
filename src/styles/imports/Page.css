@@ -7,6 +7,6 @@
 
 @media screen and (min-width: 960px) {
     .PageWrapper {
-        margin: 0 calc(1vw * var(--white-space-base) / 2);
+        margin: 0 calc(1vw * var(--white-space-base));
     }
 }

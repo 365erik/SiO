@@ -1,8 +1,9 @@
 .PrevNext {
     max-width: var(--base-width);
     width: 100%;
-    margin: 1.5rem auto;
+    margin: auto;
     font-size: .75rem;
+    border: 1px solid green;
 }
 
 .PrevNext a {
@@ -22,7 +23,6 @@
 .PrevNext ul {
     display: flex;
     flex-direction: column;
-    padding-top: 300px;
 }
 
 .PrevNext ul, .PrevNext li {
@@ -61,7 +61,7 @@
 
 @media screen and (min-width: 600px) {
     .PrevNext {
-        padding: 1rem calc(var(--white-space-base) * 1vw);
+        padding: 0 calc(var(--white-space-base) * 1vw);
     }
     .PrevNext a {
         border: none;

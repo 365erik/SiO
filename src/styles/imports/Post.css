@@ -15,5 +15,5 @@
 .postDate {
     margin: 0 0 .75rem 0;
     font-size: .7rem;
-    color: #ff4500;
+    color: var(--color-accent);
 }
