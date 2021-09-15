@@ -4,7 +4,7 @@
 }
 
 .Photo {
-    margin: 1rem auto;
+    margin: 0 auto;
     max-width: var(--media-max-width);
 }
 .PhotoFrame {

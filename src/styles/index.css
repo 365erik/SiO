@@ -2,6 +2,7 @@
 @import './imports/__RootVars.css';
 @import './imports/Animations.css';
 @import './imports/Base.css';
+@import './imports/Page.css';
 @import './imports/Photo.css';
 @import './imports/PhotoModal.css';
 @import './imports/Post.css';

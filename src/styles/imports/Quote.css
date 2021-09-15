@@ -1,6 +1,6 @@
 .Quote {
-    margin: 0 auto 1rem auto;
-    padding: 1rem 1rem .75rem 1rem;
+    margin: calc(var(--white-space-base) * .1rem) auto calc(var(--white-space-base) * .25rem) auto;
+    padding: calc(var(--white-space-base) * .15rem) calc(var(--white-space-base) * .25rem) calc(var(--white-space-base) * .05rem);
     background: var(--color-dark);
     filter: drop-shadow(3px 2px 4px rgba(0, 0, 0, .25));
 }

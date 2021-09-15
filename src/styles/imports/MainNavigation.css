@@ -1,27 +1,26 @@
 .MainNavigation {
     font-weight: 300;
-    height: 50px;
 }
 
 .MainNavigationToggle {
     padding: 0 1vw;
-    line-height: 49px;
+    line-height: var(--header-height);
     font-weight: 800;
     overflow: hidden;
     display: block;
-    width: 11.5rem;
     color: var(--color-accent);
-    background: var(--color-black);
+    background: var(--color-black);;
     text-decoration: none;
+    font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1600 - 320)));
 }
 
 .MainNavigationToggle svg {
-    margin-bottom: -4px;
+    margin-bottom: -5px;
     margin-right: .25rem;
 }
 
 .MainNavigationToggle.scrolled {
-    width: 4.5rem;
+    /*width: 4.5rem;*/
 }
 
 .MainNavigationToggle.scrolled .FullTitle {
@@ -37,6 +36,8 @@
 }
 
 .MainMenuAndHelp {
+    /* Absolute positioning allows menu to span 100% of page wrapper. */
+    position: absolute;
     display: none;
     background: var(--color-light);
     width: 100%;
@@ -65,7 +66,7 @@
 }
 
 .MainMenu a {
-    line-height: 50px;
+    line-height: var(--header-height);
     text-decoration: none;
 }
 
